@@ -187,6 +187,30 @@
             animation: float 20s infinite linear;
         }
 
+        /* Story Section */
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .story-block {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            padding: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .story-block p {
+            color: #a1a1aa;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .story-block p:last-child {
+            margin-bottom: 0;
+        }
+
         /* Skills Section */
         .section {
             padding: 100px 0;
@@ -487,6 +511,7 @@
             <div class="logo">PN</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#story">Story</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -519,7 +544,31 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- My Story Section -->
+    <section id="story" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">My Story</h2>
+            <div class="story-content fade-in">
+                <div class="story-block">
+                    <p>I started as a Laravel engineer, my first project was a UAE-based platform where suppliers were directly connected with restaurants, complete with inventory management system. That was in Laravel. There were multiple projects after that where I got to learn microservices, and other cool stuff, but the most notable one was Nye.</p>
+                    
+                    <p>It was by Oxford-based founders - their aim was to digitize NHS. We built alongside them for 2.5 years. I was a junior when I joined them, became a senior, and at one time was practically leading the team. That project is so close to my heart because of the team, the mission, and scope. It was huge. At Nye I learned good coding practices, about security, testing - we even wrote integration tests on Cypress. The team literally hired a security team to teach us about testing and all. We did marvelously well. I learned to integrate with 3rd party APIs. I worked on Java. Such good days.</p>
+                    
+                    <p>Then I joined Metaschool as a senior software engineer - remotely from Pakistan. In just one year I was the first employee of the company to be called to Singapore. I was leading their Engineering team. I worked with them for good 3 years. Metaschool is a web3 edtech platform. We partnered with some big big names of web3 like Sui, Polygon etc. We launched so many features, and campaigns, and experimented with so much stuff. The PMF was missing - we did a lot of side projects, like created a site like pump.fun, tried creating a social media for developers, and a lot of other things. The company later pivoted to AI.</p>
+                    
+                    <p>At Metaschool I learned speed. I learned that speed matters in this fast-changing world. If we are not fast enough, someone else will beat us to it. We as engineers dwell too much time in complexities, like making code sooo scalable right from the go, and microservices and what not - without knowing if this idea will ever work? I learned to "build things first, make them pretty later". But we were always in a firefighter mode, trying bunch of things - that pretty part never came. I learned NextJs, and React there. I was the one managing their servers, I learned AWS. God, how many times did I break production as I was so inexperienced but I always fixed it fast - my boss, always had my back. I learned leadership there.</p>
+                    
+                    <p>I'm not sure how good I am. I must be okay, since my current boss really values me. Though I learned that we need to move fast, but I also learned that having a good structure is also right. Changing your mind regularly about a thing IS FINE - but without the data to back it up? Just on your own whims - I am not sure about that. I never saw that work. A little bit structure, and farsight I believe is good. But things work out regardless.</p>
+                    
+                    <p>Now I am working with a small startup from US with a very talented, and experienced founder. It's a marketing platform, and the CEO has her own marketing agency. The scope is unlimited. The things are moving fast, but in a structured way. We always know WHY we're building. If something's changing, we always know the WHY behind it. Though it's not necessary, but I believe it amplifies the speed.</p>
+                    
+                    <p>I have grown to be someone who is not scared of stuff and challenges now. New tech? Bring it in. Something I've never done before? Sure why not. With AI things have become so much easier to understand. You just need to have the basics right. I am not scared of failing either. I rather fail, and figure out a way to bounce back than never fail.</p>
+                    
+                    <p>Also I love coding. Though I am a tech lead - but I'd love to have someone else give me the work lol. I code and build and break. But, well... 🍵</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title fade-in">Tech Stack</h2>
@@ -783,9 +832,10 @@
                     <h3 class="timeline-title">Tech Lead</h3>
                     <div class="timeline-company">Acube Tech, Singapore</div>
                     <p class="timeline-description">
-                        Leading the technical architecture for Promanda.ai, an AI-powered marketing platform. 
-                        Working with a talented US-based founder to build structured, scalable solutions. 
-                        Learning the balance between speed and structure - always knowing the "why" behind decisions.
+                        <strong>Technical Leadership & AI Architecture:</strong> Leading Promanda.ai's technical architecture using FastAPI, React, and GCP. 
+                        Implemented sophisticated RAG systems with LangChain, integrated OpenAI APIs for content generation, and built web scraping pipelines 
+                        for company research. Architected microservices with Docker containerization, PostgreSQL optimization, and Stripe payment integration. 
+                        Mentoring development team while maintaining direct CEO reporting relationship in structured, data-driven development environment.
                     </p>
                 </div>
 
@@ -794,9 +844,11 @@
                     <h3 class="timeline-title">Senior Software Engineer / Team Lead</h3>
                     <div class="timeline-company">Metaschool, Singapore</div>
                     <p class="timeline-description">
-                        First employee called to Singapore office. Led engineering team for Web3 edtech platform 
-                        serving 200K+ users. Learned the importance of speed in fast-changing markets, but also 
-                        the challenges of constant firefighting mode. Built partnerships with major Web3 companies.
+                        <strong>Scalable Web3 Platform Engineering:</strong> First international hire, rapidly promoted to Tech Lead. Architected AI Launchpad 
+                        using Turborepo monorepo structure with PostgreSQL/Neon multi-tenant architecture implementing RLS and vector operations. 
+                        Built NFT certification system on Polygon handling 100K+ transactions. Implemented Redis caching achieving 10x performance gains, 
+                        AWS ECS auto-scaling infrastructure, and dynamic theme engine with CSS variables. Migrated from Laravel Blade to React/Next.js 
+                        improving performance by 35%. Learned rapid prototyping under high-pressure startup environment while managing production deployments.
                     </p>
                 </div>
 
@@ -805,9 +857,9 @@
                     <h3 class="timeline-title">🏆 ETH Global Singapore Winner</h3>
                     <div class="timeline-company">Hackathon Achievement</div>
                     <p class="timeline-description">
-                        Won a category prize at ETH Global Singapore for building "Flappy Bird on Chain" - 
-                        a creative blockchain implementation of the classic game. Showcased ability to build 
-                        innovative Web3 applications under tight hackathon constraints.
+                        <strong>Blockchain Innovation:</strong> Won category prize for "Flappy Bird on Chain" - implemented game logic in Solidity 
+                        smart contracts with Web3 integration. Demonstrated ability to rapidly prototype creative blockchain applications under 
+                        48-hour constraints, showcasing both technical skills and innovative thinking in decentralized application development.
                     </p>
                 </div>
 
@@ -816,8 +868,10 @@
                     <h3 class="timeline-title">Senior Software Engineer</h3>
                     <div class="timeline-company">Folio3, Karachi</div>
                     <p class="timeline-description">
-                        Provided support and developed custom features for NetSuite (Oracle ERP). 
-                        Enhanced enterprise-level solutions and gained experience with complex business systems.
+                        <strong>Enterprise ERP Development:</strong> Specialized in NetSuite (Oracle ERP) customization and integration. 
+                        Developed custom SuiteScript solutions, workflow automation, and third-party API integrations. 
+                        Enhanced enterprise-level business processes and gained deep understanding of complex ERP architectures 
+                        serving large-scale commercial operations.
                     </p>
                 </div>
 
@@ -826,9 +880,12 @@
                     <h3 class="timeline-title">Senior Application Engineer</h3>
                     <div class="timeline-company">Next Generation Innovation, Karachi</div>
                     <p class="timeline-description">
-                        The project closest to my heart - Nye Health. Worked with Oxford-based founders to digitize NHS. 
-                        Started as junior, grew to practically leading the team. Learned proper coding practices, 
-                        security, testing with Cypress. Team hired security experts to teach us. Built something meaningful.
+                        <strong>Healthcare Platform Architecture:</strong> Core contributor to Nye Health's NHS digitization mission. 
+                        Architected microservices for doctor, nurse, patient, and admin portals using Laravel/Vue.js with MySQL optimization. 
+                        Implemented HIPAA-compliant security architecture, EMIS software integration, and video consultation systems. 
+                        Built comprehensive testing infrastructure with Cypress integration tests. Collaborated with dedicated security team 
+                        for penetration testing and compliance. Evolved from junior to technical leadership role over 2.5 years, 
+                        learning enterprise-grade security practices and healthcare industry regulations.
                     </p>
                 </div>
 
